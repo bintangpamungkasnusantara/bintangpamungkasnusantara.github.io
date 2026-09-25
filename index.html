@@ -286,6 +286,12 @@
             margin-top: 10vh;
         }
 
+        .tittle2 {
+            display: flex;
+            text-align: center;
+            padding-top: 8vh;
+            padding-bottom: 3vh;
+        }
 
         .div-tittle {
             display: flex;
@@ -303,9 +309,7 @@
         .h1-tittle {
             font-size: 40px;
             font-weight: 700;
-
         }
-
 
         .p-tittle {
             margin: 7px;
@@ -432,64 +436,63 @@
         }
 
 
-       <!-- PORTOFOLIO -->
-    <div id="portofolio"></div>
-    <section class="porto">
-        <section class="tittle2">
-            <div class="div-tittle">
-                <h2 class="h2-tittle">Portofolio</h2>
-                <h1 class="h1-tittle">Project</h1>
-                <h4 class="p-tittle">Berikut beberapa project yang pernah dikembangkan</h4>
-            </div>
-        </section>
+        /* ===========================
+           PORTOFOLIO
+        =========================== */
 
-        <!-- Project 1: Pioneer Craft -->
-        <section class="section-porto">
-            <div class="div-porto">
-                <a href="https://bintangpamungkasnusantara.github.io/pioneering" target="_blank" rel="noopener noreferrer">
-                    <img src="pioneerbepe.png" class="webbepe" alt="Pioneer Craft — Simulator Pioneering 3D" />
-                </a>
-                <h2 class="h2-porto">
-                    <a href="https://bintangpamungkasnusantara.github.io/pioneering" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
-                        Pioneer Craft — Simulator Pioneering 3D
-                    </a>
-                </h2>
-                <p class="p-porto">Simulator interaktif untuk merakit tongkat pioneering dalam tampilan 3D, dengan kontrol kamera, pemasangan, penghapusan, dan eksplorasi model.</p>
-                
-                <!-- Tombol Akses Website -->
-                <div style="text-align: center; padding-bottom: 30px;">
-                    <a href="https://bintangpamungkasnusantara.github.io/pioneering" target="_blank" rel="noopener noreferrer" class="button-beranda">
-                        Buka Simulator 🚀
-                    </a>
-                </div>
-            </div>
-        </section>
+        .porto {
+            padding-bottom: 80px;
+            background: #fdfdfd;
+        }
 
-        <!-- Project 2: Website Portofolio -->
-        <section class="section-porto">
-            <div class="div-porto">
-                <img src="webbepe.PNG" class="webbepe" alt="Website Portofolio Pribadi" />
-                <h2 class="h2-porto">Website "Portofolio Pribadi"</h2>
-                <p class="p-porto">Portofolio Pribadi menampilkan koleksi proyek dan keahlian yang telah dikembangkan selama berkarir di dunia pemrograman.</p>
-            </div>
-        </section>
+        .section-porto {
+            display: flex;
+            justify-content: center;
+            padding: 20px 5vw;
+        }
 
-        <!-- Project 3: Editing Video -->
-        <section class="section-porto">
-            <div class="div-porto">
-                <img src="edit.png" class="webbepe" alt="Editing Video" />
-                <h2 class="h2-porto">Editing Video</h2>
-                <p class="p-porto">Beberapa hasil editing video yang saya kerjakan dapat dilihat melalui TikTok <a href="https://tiktok.com/@b1ntangz" target="_blank">@b1ntangz</a> sebagai bagian dari portofolio dan proses berkarya saya.</p>
-                
-                <div style="text-align: center; padding-bottom: 30px;">
-                    <a href="https://tiktok.com/@b1ntangz" target="_blank" rel="noopener noreferrer" class="button-beranda">
-                        Lihat TikTok 📱
-                    </a>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- PORTOFOLIO END -->
+        .div-porto {
+            width: 100%;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .div-porto:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .webbepe {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .h2-porto {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 25px 30px 12px;
+            color: #222;
+        }
+
+        .p-porto {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #555;
+            padding: 0 30px 20px;
+        }
+
+        .div-porto-btn {
+            padding: 0 30px 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
 
 
         /* ===========================
@@ -898,6 +901,10 @@
                 max-width: 700px;
             }
 
+            .webbepe {
+                height: 300px;
+            }
+
 
             /* PENDIDIKAN */
             .pendidikan {
@@ -1096,14 +1103,22 @@
                 padding: 2vh 5vw;
             }
 
+            .webbepe {
+                height: 230px;
+            }
+
             .h2-porto {
-                font-size: 22px;
-                padding: 25px 20px 10px;
+                font-size: 20px;
+                padding: 20px 20px 10px;
             }
 
             .p-porto {
-                font-size: 16px;
-                padding: 0 20px 25px;
+                font-size: 15px;
+                padding: 0 20px 15px;
+            }
+
+            .div-porto-btn {
+                padding: 0 20px 20px;
             }
 
 
@@ -1263,11 +1278,15 @@
 
             /* PORTOFOLIO */
             .h2-porto {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .p-porto {
-                font-size: 15px;
+                font-size: 14px;
+            }
+
+            .webbepe {
+                height: 180px;
             }
 
 
@@ -1407,77 +1426,77 @@
     <!-- ================= BERANDA END ================= -->
 
 
-<!-- TENTANG SAYA -->
+    <!-- TENTANG SAYA -->
     <div id="about"></div>
     <section class="full-passion">
-    <section class="tittle">
-        <div class="div-tittle" >
-            <h2 class="h2-tittle">Tentang Saya</H2>
-            <h1 class="h1-tittle">Biodata Diri Bintang Pamungkas Nusantara</h1>
-            <h4 class="p-tittle">Kenalan lebih dalam yuk!</h4>
-        </div>
-    </section>
-       
-
-    <section class="about">
-        <section class="section-about">   
-            <div>
-                <h2 class="h2-about">Renaissance Developer | Santri | Environmental Enthusiast</h2>
-                <p class="p-about">Berawal dari keyakinan bahwa teknologi terbaik lahir dari rasa ingin tahu yang luas,
-                    perjalanan saya berfokus pada pengembangan solusi digital yang memadukan teknologi, riset,
-                    kreativitas, dan kepedulian terhadap lingkungan. Tiga tahun menempuh pendidikan di Pondok Pesantren
-                    Al-Tsaqafah di bawah bimbingan KH. Said Aqil Siradj membentuk karakter yang disiplin, berintegritas,
-                    dan menjunjung tinggi semangat belajar sepanjang hayat.</p>
-                <p class="p-about">Fokus utama saat ini adalah pengembangan website, mulai dari landing page, company
-                    profile, hingga solusi berbasis web yang mengutamakan pengalaman pengguna dan performa. Di luar
-                    pengembangan perangkat lunak, ketertarikan pada riset lingkungan, karya tulis ilmiah, desain visual,
-                    dan editing konten terus menjadi bagian dari proses belajar dan berkarya. Pengalaman mengikuti
-                    kompetisi karya tulis ilmiah bersama Ecoton tentang mikroplastik memperkuat pendekatan yang berbasis
-                    data dan pemecahan masalah.</p>
-                <p class="p-about">Teknologi bukan sekadar tentang membangun aplikasi, melainkan menciptakan solusi yang
-                    memberi manfaat dan dampak positif bagi masyarakat serta lingkungan.</p>
-                <p class="p-about"><b>"Learn deeply. Build boldly. Leave a positive impact."</b></p>
+        <section class="tittle">
+            <div class="div-tittle">
+                <h2 class="h2-tittle">Tentang Saya</h2>
+                <h1 class="h1-tittle">Biodata Diri Bintang Pamungkas Nusantara</h1>
+                <h4 class="p-tittle">Kenalan lebih dalam yuk!</h4>
             </div>
         </section>
+           
 
-            
-        <div class="container-passion">
-            <div>
-                <p class="tittle-passion"><b>Fokus & keahlian saya</b> (saat ini)</p>
-            </div>
-
-            <div class="div-passion">
+        <section class="about">
+            <section class="section-about">   
                 <div>
-                    <h2>💻 Web Development</h2>
-                    <p>● HTML</p>
-                    <p>● CSS</p>
-                    <p>● JavaScript</p>
-                    <p>● WordPress</p>
-                    <p>● Responsive Website</p>
+                    <h2 class="h2-about">Renaissance Developer | Santri | Environmental Enthusiast</h2>
+                    <p class="p-about">Berawal dari keyakinan bahwa teknologi terbaik lahir dari rasa ingin tahu yang luas,
+                        perjalanan saya berfokus pada pengembangan solusi digital yang memadukan teknologi, riset,
+                        kreativitas, dan kepedulian terhadap lingkungan. Tiga tahun menempuh pendidikan di Pondok Pesantren
+                        Al-Tsaqafah di bawah bimbingan KH. Said Aqil Siradj membentuk karakter yang disiplin, berintegritas,
+                        dan menjunjung tinggi semangat belajar sepanjang hayat.</p>
+                    <p class="p-about">Fokus utama saat ini adalah pengembangan website, mulai dari landing page, company
+                        profile, hingga solusi berbasis web yang mengutamakan pengalaman pengguna dan performa. Di luar
+                        pengembangan perangkat lunak, ketertarikan pada riset lingkungan, karya tulis ilmiah, desain visual,
+                        dan editing konten terus menjadi bagian dari proses belajar dan berkarya. Pengalaman mengikuti
+                        kompetisi karya tulis ilmiah bersama Ecoton tentang mikroplastik memperkuat pendekatan yang berbasis
+                        data dan pemecahan masalah.</p>
+                    <p class="p-about">Teknologi bukan sekadar tentang membangun aplikasi, melainkan menciptakan solusi yang
+                        memberi manfaat dan dampak positif bagi masyarakat serta lingkungan.</p>
+                    <p class="p-about"><b>"Learn deeply. Build boldly. Leave a positive impact."</b></p>
+                </div>
+            </section>
 
-
-                    <h2>🌏 Interests</h2>
-                    <p>● Environmental Sustainability</p>
-                    <p>● Technology</p>
-                    <p>● History</p>
+                
+            <div class="container-passion">
+                <div>
+                    <p class="tittle-passion"><b>Fokus & keahlian saya</b> (saat ini)</p>
                 </div>
 
-                <div>
-                    <h2>🔬 Research</h2>
-                    <p>● Scientific Writing </p>
-                    <p>● Environmental Research</p>
-                    <p>● Problem Solving</p>
+                <div class="div-passion">
+                    <div>
+                        <h2>💻 Web Development</h2>
+                        <p>● HTML</p>
+                        <p>● CSS</p>
+                        <p>● JavaScript</p>
+                        <p>● WordPress</p>
+                        <p>● Responsive Website</p>
 
-                    <h2>🎨 Creative</h2>
-                    <p>● UI Design</p>
-                    <p>● Photo & Video Editing</p>
-                    <p>● Branding</p>
-                    <p>● Content Creation</p>
+
+                        <h2>🌏 Interests</h2>
+                        <p>● Environmental Sustainability</p>
+                        <p>● Technology</p>
+                        <p>● History</p>
+                    </div>
+
+                    <div>
+                        <h2>🔬 Research</h2>
+                        <p>● Scientific Writing </p>
+                        <p>● Environmental Research</p>
+                        <p>● Problem Solving</p>
+
+                        <h2>🎨 Creative</h2>
+                        <p>● UI Design</p>
+                        <p>● Photo & Video Editing</p>
+                        <p>● Branding</p>
+                        <p>● Content Creation</p>
+                    </div>
                 </div>
-            </div>
 
-            <section class="container-connect">  
-                <h2 class="h2-connect">Mari Terkoneksi</h2>
+                <section class="container-connect">  
+                    <h2 class="h2-connect">Mari Terkoneksi</h2>
                     <p class="p-cr">Saya selalu terbuka untuk kolaborasi, diskusi proyek, atau peluang profesional baru.
                         Silakan hubungi saya melalui Email, WhatsApp, atau melalui jaringan profesional di bawah ini.
                     </p>
@@ -1542,7 +1561,7 @@
                             </svg>
                         </a>
                     </div>
-            </section>
+                </section>
             </div>
         </section>
     </section>
@@ -1552,14 +1571,15 @@
     <!-- PORTOFOLIO -->
     <div id="portofolio"></div>
     <section class="porto">
-    <section class="tittle2">
-        <div class="div-tittle">
-            <h2 class="h2-tittle">Portofolio</H2>
-            <h1 class="h1-tittle">Project</h1>
-            <h4 class="p-tittle">Berikut beberapa project yang pernah dikembangkan</h4>
-        </div>
-    </section>
+        <section class="tittle2">
+            <div class="div-tittle">
+                <h2 class="h2-tittle">Portofolio</h2>
+                <h1 class="h1-tittle">Project</h1>
+                <h4 class="p-tittle">Berikut beberapa project yang pernah dikembangkan</h4>
+            </div>
+        </section>
 
+        <!-- Project 1: Pioneer Craft -->
         <section class="section-porto">
             <div class="div-porto">
                 <a href="https://bintangpamungkasnusantara.github.io/pioneering" target="_blank" rel="noopener noreferrer">
@@ -1571,23 +1591,36 @@
                     </a>
                 </h2>
                 <p class="p-porto">Simulator interaktif untuk merakit tongkat pioneering dalam tampilan 3D, dengan kontrol kamera, pemasangan, penghapusan, dan eksplorasi model.</p>
+                
+                <div class="div-porto-btn">
+                    <a href="https://bintangpamungkasnusantara.github.io/pioneering" target="_blank" rel="noopener noreferrer" class="button-beranda">
+                        Buka Simulator 🚀
+                    </a>
+                </div>
             </div>
         </section>
 
+        <!-- Project 2: Website Portofolio -->
         <section class="section-porto">
             <div class="div-porto">
-                <img src="webbepe.PNG" class="webbepe" />
+                <img src="webbepe.PNG" class="webbepe" alt="Website Portofolio Pribadi" />
                 <h2 class="h2-porto">Website "Portofolio Pribadi"</h2>
-                <p class="p-porto">Portofolio Pribadi menampilkan koleksi proyek dan keahlian yang telah
-                    dikembangkan selama berkarir di dunia pemrograman.</p>
+                <p class="p-porto">Portofolio Pribadi menampilkan koleksi proyek dan keahlian yang telah dikembangkan selama berkarir di dunia pemrograman.</p>
             </div>
         </section>
 
+        <!-- Project 3: Editing Video -->
         <section class="section-porto">
             <div class="div-porto">
-                <img src="edit.png" class="webbepe" />
+                <img src="edit.png" class="webbepe" alt="Editing Video" />
                 <h2 class="h2-porto">Editing Video</h2>
-                <p class="p-porto">Beberapa hasil editing video yang saya kerjakan dapat dilihat melalui TikTok <a href="https://tiktok.com/@b1ntangz">@b1ntangz<a> sebagai bagian dari portofolio dan proses berkarya saya.</p>
+                <p class="p-porto">Beberapa hasil editing video yang saya kerjakan dapat dilihat melalui TikTok <a href="https://tiktok.com/@b1ntangz" target="_blank" rel="noopener noreferrer" style="color: #D32323; font-weight: 600;">@b1ntangz</a> sebagai bagian dari portofolio dan proses berkarya saya.</p>
+                
+                <div class="div-porto-btn">
+                    <a href="https://tiktok.com/@b1ntangz" target="_blank" rel="noopener noreferrer" class="button-beranda">
+                        Lihat TikTok 📱
+                    </a>
+                </div>
             </div>
         </section>
     </section>
@@ -1600,7 +1633,7 @@
     <div id="pendidikan"></div>
     <section class="tittle">
         <div class="div-tittle">
-            <h2 class="h2-tittle">Pendidikan & Bootcamp</H2>
+            <h2 class="h2-tittle">Pendidikan & Bootcamp</h2>
             <h1 class="h1-tittle">Riwayat Pendidikan & Bootcamp</h1>
             <h4 class="p-tittle">Pernah atau sedang belajar pada yayasan, program dan universitas berikut</h4>
         </div>
@@ -1608,12 +1641,12 @@
 
     <section class="pendidikan">
         <div class="div-pendidikan">
-            <a href="https://smpn126jakarta.sch.id/"><img src="sadam.png" class="sadam"/></a>
-            <a href="https://altsaqafah.id/"><img src="tsaqaf.png" class="tsaqaf"/></a>
+            <a href="https://smpn126jakarta.sch.id/"><img src="sadam.png" class="sadam" alt="SMPN 126 Jakarta"/></a>
+            <a href="https://altsaqafah.id/"><img src="tsaqaf.png" class="tsaqaf" alt="Pondok Pesantren Al-Tsaqafah"/></a>
         </div>
         <div class="div-pendidikan">
-            <a href="https://uinssc.ac.id/"><img src="ssc.png" class="ssc"/></a>
-            <a href="https://websitemaker.id/"><img src="wmbg.png" class="wmbg"/></a>
+            <a href="https://uinssc.ac.id/"><img src="ssc.png" class="ssc" alt="UIN Siber Syekh Nurjati Cirebon"/></a>
+            <a href="https://websitemaker.id/"><img src="wmbg.png" class="wmbg" alt="Website Maker Bootcamp"/></a>
         </div>
     </section>
     <!-- PENDIDIKAN END -->
@@ -1621,77 +1654,77 @@
 
 
     <!-- PENGALAMAN -->
-<div id="pengalaman"></div>
+    <div id="pengalaman"></div>
 
-<section class="pengalaman">
+    <section class="pengalaman">
 
-    <section class="tittle2">
-        <div class="div-tittle">
-            <h2 class="h2-tittle">Pengalaman</h2>
-            <h1 class="h1-tittle">Pengalaman Organisasi</h1>
-            <h4 class="p-tittle">
-                Beberapa pengalaman organisasi yang membentuk kemampuan kepemimpinan, kerja sama tim, dan tanggung jawab.
-            </h4>
-        </div>
+        <section class="tittle2">
+            <div class="div-tittle">
+                <h2 class="h2-tittle">Pengalaman</h2>
+                <h1 class="h1-tittle">Pengalaman Organisasi</h1>
+                <h4 class="p-tittle">
+                    Beberapa pengalaman organisasi yang membentuk kemampuan kepemimpinan, kerja sama tim, dan tanggung jawab.
+                </h4>
+            </div>
+        </section>
+
+        <section class="section-pengalaman">
+
+            <div class="div-pengalaman">
+                <img src="psdm.png" class="psdm-png" alt="PASSADAM SMPN 126 Jakarta">
+
+                <h3 class="text-pengalaman">
+                    Ketua Ekstrakurikuler PASSADAM 2022–2023
+                </h3>
+
+                <h3 class="text-pengalaman">
+                    Pasukan Pengibar Bendera SMPN 126 Jakarta
+                </h3>
+            </div>
+
+            <div class="div-pengalaman">
+                <img src="osis.png" class="osis-png" alt="OSIS SMPN 126 Jakarta">
+
+                <h3 class="text-pengalaman">
+                    Ketua Bidang Keimanan dan Ketaqwaan
+                </h3>
+
+                <h3 class="text-pengalaman">
+                    Kepada Tuhan Yang Maha Esa
+                </h3>
+
+                <h3 class="text-pengalaman">
+                    OSIS SMPN 126 Jakarta
+                </h3>
+            </div>
+
+            <div class="div-pengalaman">
+                <img src="skut.png" class="skut-png" alt="Pramuka Al-Tsaqafah">
+
+                <h3 class="text-pengalaman">
+                    Ketua Bidang Pembinaan dan Latihan
+                </h3>
+
+                <h3 class="text-pengalaman">
+                    Dewan Ambalan Pramuka Al-Tsaqafah
+                </h3>
+            </div>
+
+        </section>
+
     </section>
-
-    <section class="section-pengalaman">
-
-        <div class="div-pengalaman">
-            <img src="psdm.png" class="psdm-png" alt="PASSADAM SMPN 126 Jakarta">
-
-            <h3 class="text-pengalaman">
-                Ketua Ekstrakurikuler PASSADAM 2022–2023
-            </h3>
-
-            <h3 class="text-pengalaman">
-                Pasukan Pengibar Bendera SMPN 126 Jakarta
-            </h3>
-        </div>
-
-        <div class="div-pengalaman">
-            <img src="osis.png" class="osis-png" alt="OSIS SMPN 126 Jakarta">
-
-            <h3 class="text-pengalaman">
-                Ketua Bidang Keimanan dan Ketaqwaan
-            </h3>
-
-            <h3 class="text-pengalaman">
-                Kepada Tuhan Yang Maha Esa
-            </h3>
-
-            <h3 class="text-pengalaman">
-                OSIS SMPN 126 Jakarta
-            </h3>
-        </div>
-
-        <div class="div-pengalaman">
-            <img src="skut.png" class="skut-png" alt="Pramuka Al-Tsaqafah">
-
-            <h3 class="text-pengalaman">
-                Ketua Bidang Pembinaan dan Latihan
-            </h3>
-
-            <h3 class="text-pengalaman">
-                Dewan Ambalan Pramuka Al-Tsaqafah
-            </h3>
-        </div>
-
-    </section>
-
-</section>
-<!-- PENGALAMAN END -->
+    <!-- PENGALAMAN END -->
 
 
 
     <!-- KONTAK -->
-     <div id="kontak"></div>
+    <div id="kontak"></div>
     <section class="kontak">
         <section class="tittle3">
             <div class="div-tittle">
-            <h2 class="h2-tittle">Kontak</H2>
-            <h1 class="h1-tittle">Hubungi Saya</h1>
-        </div>
+                <h2 class="h2-tittle">Kontak</h2>
+                <h1 class="h1-tittle">Hubungi Saya</h1>
+            </div>
         </section>
 
         <div class="social-container">
@@ -1758,10 +1791,10 @@
     <!-- KONTAK END -->
 
     <!-- FOOTER -->
-     <section class="section-footer">
+    <section class="section-footer">
         <div>
             <h1>Bintang Pamungkas Nusantara</h1>
-            <h4 class="h4-footer">Website ini merupakan platform untuk memperkenalan diri ke dunia digital</h4>
+            <h4 class="h4-footer">Website ini merupakan platform untuk memperkenalkan diri ke dunia digital</h4>
             <p>pamungkasbepe23@gmail.com</p>
         </div>
 
